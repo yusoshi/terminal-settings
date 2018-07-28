@@ -1,0 +1,17 @@
+startup_message off
+escape ^Ta
+defhstatus "^En:^Et"
+
+defscrollback 5000
+#deflogin off
+defencoding utf-8
+encoding utf-8 utf-8
+
+hardstatus on
+hardstatus alwayslastline "[%l] %w"
+autodetach on
+#defkanji euc
+term xterm-256color
+termcapinfo xterm-color 'hs:ts=\E[?2S\E[?E\E[?%i%dT:fs=\E[?F:ess=\E[?E'
+#termcapinfo kterm 'hs:ts=\E[?2S\E[?E\E[?%i%dT:fs=\E[?F:ess=\E[?E'
+
