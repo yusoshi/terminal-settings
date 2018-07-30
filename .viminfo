@@ -19,12 +19,13 @@ $
 # Command Line History (newest to oldest):
 :wq
 :q
+:w
+:wq!
+:q!
 :set nonumber
 :nonumber
 :nonum
 :noline
-:q!
-:w
 :vs src/templates/htmlHead.php
 :vs src/templates/users/edit/edit.phtml
 :1
@@ -66,7 +67,6 @@ $
 :vs ../public/asset/css/articles/index.php
 :vs classes/Controller/UsersController.php
 :sp classes/Controller/UsersController.php
-:2
 
 # Search String History (newest to oldest):
 ? @$
@@ -129,7 +129,7 @@ $
 # Registers:
 "0	LINE	0
 	!.screenrc
-""1	LINE	0
+"1	LINE	0
 	!.vim/
 "2	LINE	0
 	!.screenrc
@@ -147,21 +147,31 @@ $
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 "9	LINE	0
 		
-"-	CHAR	0
-	d
+""-	CHAR	0
+	3
 
 # File marks:
-'0  4  0  ~/.gitignore
-'1  10  0  ~/.vim
-'3  1  0  ~/.viminfo
-'4  5  6  ~/.gitignore
-'5  2  9  ~/.gitignore
-'6  1  0  ~/.gitignore
-'7  1  0  ~/.vimrc
-'8  13  18  ~/.vimrc
-'9  1  0  ~/.zshrc
+'0  23  55  ~/.zshrc
+'1  1  0  ~/.bashrc
+'2  1  0  ~/.bash_profile
+'3  1  0  ~/.zsh_history
+'4  500  0  ~/.bash_history
+'5  6  1  /private/etc/hosts
+'6  9  0  /private/etc/hosts
+'7  4  0  ~/.gitignore
+'8  10  0  ~/.vim
 
 # Jumplist (newest first):
+-'  23  55  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.bashrc
+-'  1  0  ~/.bash_profile
+-'  1  0  ~/.zsh_history
+-'  500  0  ~/.bash_history
+-'  1  0  ~/.bash_history
+-'  6  1  /private/etc/hosts
+-'  1  0  /private/etc/hosts
+-'  9  0  /private/etc/hosts
 -'  4  0  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  10  0  ~/.vim
@@ -170,11 +180,9 @@ $
 -'  2  9  ~/.gitignore
 -'  1  0  ~/.vimrc
 -'  13  18  ~/.vimrc
--'  1  0  ~/.zshrc
 -'  11  0  ~/.screenrc
 -'  1  0  ~/.screenrc
 -'  5  0  /private/etc/hosts
--'  1  0  /private/etc/hosts
 -'  7  0  /private/etc/hosts
 -'  11  15  /private/etc/hosts
 -'  12  0  /private/etc/hosts
@@ -251,16 +259,53 @@ $
 -'  1  0  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
 -'  6  47  ~/projects/uchipedia/app/src/templates/articles/index.phtml
 -'  10  38  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  8  47  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  7  47  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  14  20  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  35  0  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  8  0  ~/projects/uchipedia/app/src/templates/articles
--'  21  28  ~/projects/uchipedia/app/src/templates/parts/fnhdArticles.php
--'  1  0  ~/projects/uchipedia/app/src/templates/parts/fnhdArticles.php
--'  16  28  ~/projects/uchipedia/app/src/templates/parts/latestArticles.php
 
 # History of marks within files (newest to oldest):
+
+> ~/.zshrc
+	"	23	55
+	^	23	56
+	.	23	0
+	+	12	6
+	+	5	0
+	+	9	18
+	+	12	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	9	28
+	+	23	0
+
+> ~/.bashrc
+	"	1	0
+
+> ~/.bash_profile
+	"	1	0
+	.	4	0
+	+	4	0
+
+> ~/.zsh_history
+	"	1	0
+
+> ~/.bash_history
+	"	500	0
+
+> /private/etc/hosts
+	"	6	1
+	^	6	2
+	.	7	0
+	+	14	0
+	+	10	0
+	+	14	0
+	+	13	0
+	+	13	0
+	+	12	0
+	+	11	32
+	+	11	0
+	+	8	0
+	+	7	0
+	+	7	1
+	+	7	0
 
 > ~/.gitignore
 	"	4	0
@@ -311,40 +356,12 @@ $
 	+	19	0
 	+	13	18
 
-> ~/.zshrc
-	"	1	0
-	^	9	29
-	.	9	28
-	+	12	6
-	+	5	0
-	+	9	18
-	+	12	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	9	28
-
 > ~/.screenrc
 	"	11	0
 	.	12	0
 	+	17	0
 	+	14	18
 	+	12	0
-
-> /private/etc/hosts
-	"	5	0
-	.	7	0
-	+	14	0
-	+	10	0
-	+	14	0
-	+	13	0
-	+	13	0
-	+	12	0
-	+	11	32
-	+	11	0
-	+	8	0
-	+	7	0
-	+	7	0
 
 > ~/projects/uchipedia/app/src/templates/articles/index.phtml
 	"	11	81
@@ -967,14 +984,6 @@ $
 > ~/projects/uchipedia/.git/config
 	"	11	0
 
-> ~/.bashrc
-	"	1	0
-
-> ~/.bash_profile
-	"	3	0
-	.	4	0
-	+	4	0
-
 > ~/projects/uchipedia/app/src/hoge
 	"	1	0
 	^	38	4
@@ -1394,10 +1403,3 @@ $
 
 > ~/projects/uchipedia/app/vendor/autoload.php
 	"	7	7
-
-> ~/projects/uchipedia/app/composer.lock
-	"	58	0
-
-> ~/projects/uchipedia/app/vendor/slim/slim/README.md
-	"	80	0
-	m	1	0
