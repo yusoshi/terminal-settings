@@ -18,10 +18,10 @@ $
 
 # Command Line History (newest to oldest):
 :wq
+:q!
+:wq!
 :q
 :w
-:wq!
-:q!
 :set nonumber
 :nonumber
 :nonum
@@ -129,48 +129,52 @@ $
 # Registers:
 "0	LINE	0
 	!.screenrc
-"1	LINE	0
-	!.vim/
+""1	LINE	0
+	setopt share_history
 "2	LINE	0
-	!.screenrc
+	# historyを共有
 "3	LINE	0
-	./
+	!.vim/
 "4	LINE	0
-	
+	!.screenrc
 "5	LINE	0
-	13.231.186.142  admin.farmnote.jp
+	./
 "6	LINE	0
-	13.231.186.142  admin.farmnote.jp
+	
 "7	LINE	0
-	<?php
+	13.231.186.142  admin.farmnote.jp
 "8	LINE	0
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	13.231.186.142  admin.farmnote.jp
 "9	LINE	0
-		
-""-	CHAR	0
-	3
+	<?php
+"-	CHAR	0
+	#
 
 # File marks:
-'0  23  55  ~/.zshrc
-'1  1  0  ~/.bashrc
-'2  1  0  ~/.bash_profile
-'3  1  0  ~/.zsh_history
-'4  500  0  ~/.bash_history
-'5  6  1  /private/etc/hosts
-'6  9  0  /private/etc/hosts
-'7  4  0  ~/.gitignore
-'8  10  0  ~/.vim
+'0  23  16  ~/.zshrc
+'1  9  28  ~/.zshrc
+'2  7  0  /private/etc/hosts
+'3  21  55  ~/.zshrc
+'4  1  0  ~/.bashrc
+'5  1  0  ~/.bash_profile
+'6  1  0  ~/.zsh_history
+'7  500  0  ~/.bash_history
+'8  6  1  /private/etc/hosts
+'9  9  0  /private/etc/hosts
 
 # Jumplist (newest first):
--'  23  55  ~/.zshrc
+-'  23  16  ~/.zshrc
 -'  1  0  ~/.zshrc
+-'  9  28  ~/.zshrc
+-'  7  0  /private/etc/hosts
+-'  1  0  /private/etc/hosts
+-'  21  55  ~/.zshrc
 -'  1  0  ~/.bashrc
 -'  1  0  ~/.bash_profile
 -'  1  0  ~/.zsh_history
 -'  500  0  ~/.bash_history
 -'  1  0  ~/.bash_history
 -'  6  1  /private/etc/hosts
--'  1  0  /private/etc/hosts
 -'  9  0  /private/etc/hosts
 -'  4  0  ~/.gitignore
 -'  1  0  ~/.gitignore
@@ -183,7 +187,6 @@ $
 -'  11  0  ~/.screenrc
 -'  1  0  ~/.screenrc
 -'  5  0  /private/etc/hosts
--'  7  0  /private/etc/hosts
 -'  11  15  /private/etc/hosts
 -'  12  0  /private/etc/hosts
 -'  10  0  /private/etc/hosts
@@ -257,15 +260,13 @@ $
 -'  6  47  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
 -'  3  0  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
 -'  1  0  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  6  47  ~/projects/uchipedia/app/src/templates/articles/index.phtml
--'  10  38  ~/projects/uchipedia/app/src/templates/articles/index.phtml
 
 # History of marks within files (newest to oldest):
 
 > ~/.zshrc
-	"	23	55
-	^	23	56
-	.	23	0
+	"	23	16
+	^	23	19
+	.	23	16
 	+	12	6
 	+	5	0
 	+	9	18
@@ -274,7 +275,28 @@ $
 	+	12	0
 	+	13	0
 	+	9	28
-	+	23	0
+	+	21	0
+	+	9	28
+	+	25	0
+	+	16	0
+	+	23	16
+
+> /private/etc/hosts
+	"	7	0
+	^	7	1
+	.	7	0
+	+	14	0
+	+	10	0
+	+	14	0
+	+	13	0
+	+	13	0
+	+	12	0
+	+	11	32
+	+	11	0
+	+	8	0
+	+	7	0
+	+	7	1
+	+	7	0
 
 > ~/.bashrc
 	"	1	0
@@ -289,23 +311,6 @@ $
 
 > ~/.bash_history
 	"	500	0
-
-> /private/etc/hosts
-	"	6	1
-	^	6	2
-	.	7	0
-	+	14	0
-	+	10	0
-	+	14	0
-	+	13	0
-	+	13	0
-	+	12	0
-	+	11	32
-	+	11	0
-	+	8	0
-	+	7	0
-	+	7	1
-	+	7	0
 
 > ~/.gitignore
 	"	4	0
