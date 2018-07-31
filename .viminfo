@@ -8,20 +8,24 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ne
+~MSle0/ne
 
 # Last Substitute Search Pattern:
-~MSle0&\/\/
+~MSle0~&-
 
 # Last Substitute String:
-$
+$*
 
 # Command Line History (newest to oldest):
 :wq
+:w
+:23,26s/-/*/g
+:12,15s/-/*/g
+:s/a/x
+:%s/a/x
 :q!
 :wq!
 :q
-:w
 :set nonumber
 :nonumber
 :nonum
@@ -63,12 +67,10 @@ $
 :sp templates/users/sign_in/sign_in.phtml
 :sp templates/articles/index.phtml
 :vs classes/Controller/ArticlesController.php
-:vs ../public/asset/css/common.php
-:vs ../public/asset/css/articles/index.php
-:vs classes/Controller/UsersController.php
-:sp classes/Controller/UsersController.php
 
 # Search String History (newest to oldest):
+? -
+? a
 ? @$
 ?/ne
 ?/logger
@@ -117,8 +119,6 @@ $
 ?/else
 ?/returnView
 ? user\[0\]
-? user[0]
-? users[0]
 
 # Expression History (newest to oldest):
 
@@ -130,41 +130,51 @@ $
 "0	LINE	0
 	!.screenrc
 ""1	LINE	0
-	setopt share_history
+	 
 "2	LINE	0
-	# historyを共有
+	xbcxccccc
 "3	LINE	0
-	!.vim/
+	setopt share_history
 "4	LINE	0
-	!.screenrc
+	# historyを共有
 "5	LINE	0
-	./
+	!.vim/
 "6	LINE	0
-	
+	!.screenrc
 "7	LINE	0
-	13.231.186.142  admin.farmnote.jp
+	./
 "8	LINE	0
-	13.231.186.142  admin.farmnote.jp
+	
 "9	LINE	0
-	<?php
+	13.231.186.142  admin.farmnote.jp
 "-	CHAR	0
-	#
+		
 
 # File marks:
-'0  23  16  ~/.zshrc
-'1  9  28  ~/.zshrc
-'2  7  0  /private/etc/hosts
-'3  21  55  ~/.zshrc
-'4  1  0  ~/.bashrc
-'5  1  0  ~/.bash_profile
-'6  1  0  ~/.zsh_history
-'7  500  0  ~/.bash_history
-'8  6  1  /private/etc/hosts
-'9  9  0  /private/etc/hosts
+'0  28  16  ~/.zshrc
+'1  45  5  ~/materials/新人研修発表ドラフト.txt
+'2  23  16  ~/.zshrc
+'3  9  28  ~/.zshrc
+'4  7  0  /private/etc/hosts
+'5  21  55  ~/.zshrc
+'6  1  0  ~/.bashrc
+'7  1  0  ~/.bash_profile
+'8  1  0  ~/.zsh_history
+'9  500  0  ~/.bash_history
 
 # Jumplist (newest first):
--'  23  16  ~/.zshrc
+-'  28  16  ~/.zshrc
 -'  1  0  ~/.zshrc
+-'  45  5  ~/materials/新人研修発表ドラフト.txt
+-'  38  17  ~/materials/新人研修発表ドラフト.txt
+-'  34  10  ~/materials/新人研修発表ドラフト.txt
+-'  18  1  ~/materials/新人研修発表ドラフト.txt
+-'  15  1  ~/materials/新人研修発表ドラフト.txt
+-'  12  0  ~/materials/新人研修発表ドラフト.txt
+-'  19  0  ~/materials/新人研修発表ドラフト.txt
+-'  20  0  ~/materials/新人研修発表ドラフト.txt
+-'  1  0  ~/materials/新人研修発表ドラフト.txt
+-'  23  16  ~/.zshrc
 -'  9  28  ~/.zshrc
 -'  7  0  /private/etc/hosts
 -'  1  0  /private/etc/hosts
@@ -248,25 +258,16 @@ $
 -'  46  0  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
 -'  291  34  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
 -'  281  19  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
--'  29  0  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
--'  282  0  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
--'  68  34  ~/projects/uchipedia/app/src/classes/Controller/UsersController.php
--'  27  32  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  25  32  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  23  32  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  10  15  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  8  47  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  7  47  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  6  47  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  3  0  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
--'  1  0  ~/projects/uchipedia/app/src/templates/articles/show/show.phtml
+-'  45  5  ~/materials/新人研修発表ドラフト.txt
+-'  38  17  ~/materials/新人研修発表ドラフト.txt
+-'  34  10  ~/materials/新人研修発表ドラフト.txt
 
 # History of marks within files (newest to oldest):
 
 > ~/.zshrc
-	"	23	16
-	^	23	19
-	.	23	16
+	"	28	16
+	^	28	17
+	.	28	0
 	+	12	6
 	+	5	0
 	+	9	18
@@ -280,6 +281,33 @@ $
 	+	25	0
 	+	16	0
 	+	23	16
+	+	28	0
+
+> ~/materials/新人研修発表ドラフト.txt
+	"	45	5
+	^	40	16
+	.	40	13
+	+	20	0
+	+	19	0
+	+	20	0
+	+	12	0
+	+	23	0
+	+	29	21
+	+	33	6
+	+	30	7
+	+	31	6
+	+	30	22
+	+	34	6
+	+	18	1
+	+	39	0
+	+	34	10
+	+	39	6
+	+	35	6
+	+	44	3
+	+	38	17
+	+	46	0
+	+	44	22
+	+	40	13
 
 > /private/etc/hosts
 	"	7	0
@@ -1405,6 +1433,3 @@ $
 
 > ~/projects/uchipedia/app/vendor/composer/autoload_real.php
 	"	64	0
-
-> ~/projects/uchipedia/app/vendor/autoload.php
-	"	7	7

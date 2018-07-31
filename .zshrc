@@ -23,3 +23,6 @@ setopt share_history        # share command history data
 #ディレクトリ
 # ディレクトリ名を入力するだけで移動
 setopt auto_cd
+
+# 移動したディレクトリを記録しておく。"cd -[Tab]"で移動履歴を一覧
+setopt auto_pushd
