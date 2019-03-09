@@ -32,5 +32,12 @@ nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 set smarttab
 " インデント幅
 set shiftwidth=4
-
-
+" インクリメントサーチ
+set incsearch
+" クリップボード連携
+set clipboard+=unnamed
+"BSで削除できるものを指定する
+" indent  : 行頭の空白
+" eol     : 改行
+" start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start

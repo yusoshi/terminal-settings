@@ -26,3 +26,7 @@ setopt auto_cd
 
 # 移動したディレクトリを記録しておく。"cd -[Tab]"で移動履歴を一覧
 setopt auto_pushd
+
+# opam configuration
+test -r /Users/nishiyama/.opam/opam-init/init.zsh && . /Users/nishiyama/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+alias ocaml="rlwrap ocaml"
